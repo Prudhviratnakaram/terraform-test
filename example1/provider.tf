@@ -1,5 +1,7 @@
 terraform {
   required_providers {
     aws = {
-  region = "us-east-1"
+      region = "us-east-1"
+    }
+  }
 }
