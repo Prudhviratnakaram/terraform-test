@@ -31,5 +31,5 @@ resource "aws_security_group" "test" {
   }
 }
 output "sgid" {
-  value = aws_security_group.test.id
+  value = "aws_security_group.test.id"
 }
