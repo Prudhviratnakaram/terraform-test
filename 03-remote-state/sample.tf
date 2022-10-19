@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-b66"
+    bucket = "terraform-practice"
     key    = "sample/terraform.tfstate"
     region = "us-east-1"
   }
