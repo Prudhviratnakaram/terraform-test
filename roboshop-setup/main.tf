@@ -2,8 +2,7 @@ resource "aws_instance" "app" {
   count                  = length(var.components)
   ami                    = data.aws_ami.ami.image_id
   instance_type          = "t3.micro"
-  iam_instance_profile   = "SecretManager_Role_for_RoboShop_Nodes"
-  vpc_security_group_ids = ["sg-0e69e1ed431ba73ad"]
+
   tags = {
     Name = "${var.components["${count.index}"]}-dev"
   }
