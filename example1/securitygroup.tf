@@ -1,6 +1,6 @@
-resource "aws_security_group" "web" {
-  name        = "web"
-  description = "web"
+resource "aws_security_group" "web1" {
+  name        = "web1"
+  description = "web1"
   vpc_id      = "vpc-03f46432a850ce405"
   ingress {
     description = "SSH"
@@ -27,6 +27,6 @@ resource "aws_security_group" "web" {
   }
 
   tags = {
-    Name = "web"
+    Name = "web1"
   }
 }
