@@ -9,4 +9,7 @@ terraform {
 resource "aws_instance" "web" {
   ami                    = "ami-06a4e7851153628ea"
   instance_type          = "t3.micro"
+  tags = {
+    Name = "web1"
+  }
 }
