@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  ami                    = "ami-0da08e4e5b8943a45"
+  ami                    = "ami-06a4e7851153628ea"
   instance_type          = "t3.micro"
   vpc_security_group_ids = [var.sgid]
 }
